@@ -1,0 +1,31 @@
+# remove character from string
+str = "Othman ahmed"
+print(str)
+str2 = str.replace("m", "h")
+print(str2)
+
+
+# ----------------------------
+
+# prime in range
+
+min = int(input("Enter the min : "))
+max = int(input("Enter the max : "))
+
+for n in range(min,max + 1):
+   if n > 1:
+       for i in range(2,n):
+           if (n % i) == 0:
+               break
+       else:
+           print(n)
+
+
+# ------------------------------
+string = input("your string")
+cha = input("enter the character")
+count=0
+for i in string:
+    if i ==cha:
+        count+=1
+        print(cha, "repeated" ,count, "times in the string")
